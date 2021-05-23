@@ -1,0 +1,150 @@
+env:
+  node: true
+  es2021: true
+plugins: ["@typescript-eslint"]
+parser: "@typescript-eslint/parser"
+parserOptions:
+  sourceType: module
+extends:
+  ["eslint:recommended", "plugin:@typescript-eslint/recommended", "plugin:prettier/recommended"]
+rules:
+  no-extra-parens: error
+  no-template-curly-in-string: error
+  no-unreachable-loop: warn
+  no-unsafe-optional-chaining: error
+  no-useless-backreference: warn
+  require-atomic-updates: warn
+  class-methods-use-this: error
+  consistent-return: error
+  default-case: error
+  default-case-last: error
+  default-param-last: warn
+  eqeqeq: error
+  no-else-return: error
+  no-empty-function: warn
+  no-eq-null: error
+  no-eval: warn
+  no-implied-eval: error
+  no-invalid-this: warn
+  no-iterator: error
+  no-lone-blocks: error
+  no-magic-numbers: warn
+  no-new: error
+  no-new-func: error
+  no-new-wrappers: error
+  no-nonoctal-decimal-escape: error
+  no-octal-escape: error
+  no-param-reassign: error
+  no-proto: error
+  no-return-assign: [error, always]
+  no-return-await: error
+  no-script-url: error
+  no-self-compare: error
+  no-sequences: error
+  no-throw-literal: error
+  no-unmodified-loop-condition: warn
+  no-unused-expressions: warn
+  no-useless-call: warn
+  no-useless-concat: warn
+  no-useless-return: warn
+  no-void: warn
+  no-warning-comments: off
+  prefer-named-capture-group: warn
+  prefer-promise-reject-errors: error
+  prefer-regex-literals: warn
+  radix: error
+  require-await: error
+  require-unicode-regexp: warn
+  vars-on-top: warn
+  wrap-iife: ["error", "any"]
+  yoda: warn
+  init-declarations: ["error", "never"]
+  no-label-var: warn
+  no-undef-init: error
+  no-use-before-define: error
+  array-bracket-newline: ["error", "consistent"]
+  array-bracket-spacing: ["error", "never"]
+  array-element-newline: ["error", "consistent"]
+  block-spacing: error
+  brace-style: error
+  camelcase: warn
+  comma-dangle: ["error", "never"]
+  computed-property-spacing: ["error", "never"]
+  eol-last: error
+  func-call-spacing: error
+  func-names: ["error", "never"]
+  func-style: error
+  function-call-argument-newline: [error, consistent]
+  id-denylist:
+    ["error", "err", "e", "data", "callback", "call", "func", "hoge", "fuga", "tmp", "temp"]
+  id-length: ["error", { "min": 2 }]
+  implicit-arrow-linebreak: error
+  indent: ["error", 2]
+  jsx-quotes: error
+  key-spacing: error
+  keyword-spacing: error
+  lines-between-class-members: ["error", "always"]
+  max-depth: warn
+  max-len:
+    [
+      "error",
+      { "ignoreStrings": true, "ignoreTemplateLiterals": true, "ignoreRegExpLiterals": true },
+    ]
+  max-lines-per-function: warn
+  max-nested-callbacks: warn
+  max-params: ["warn", 5]
+  max-statements-per-line: error
+  multiline-ternary: [error, never]
+  no-array-constructor: error
+  no-bitwise: warn
+  no-continue: off
+  no-mixed-operators: error
+  no-multiple-empty-lines: error
+  no-new-object: error
+  no-plusplus: off
+  no-tabs: error
+  no-underscore-dangle: warn
+  no-unneeded-ternary: error
+  no-whitespace-before-property: error
+  nonblock-statement-body-position: error
+  object-curly-newline: ["error", { "multiline": true }]
+  object-curly-spacing: ["error", "never"]
+  object-property-newline: ["error", { "allowAllPropertiesOnSameLine": true }]
+  one-var: ["error", { "var": "always", "let": "never", "const": "never" }]
+  one-var-declaration-per-line: error
+  operator-assignment: error
+  operator-linebreak: ["error", "before"]
+  padded-blocks: ["error", "never"]
+  padding-line-between-statements: off
+  prefer-exponentiation-operator: error
+  prefer-object-spread: warn
+  quote-props: ["error", "as-needed"]
+  quotes: error
+  semi-spacing: error
+  semi-style: error
+  sort-keys: error
+  sort-vars: error
+  space-before-blocks: error
+  space-before-function-paren: ["error", "never"]
+  space-in-parens: error
+  space-infix-ops: error
+  space-unary-ops: error
+  spaced-comment: error
+  switch-colon-spacing: error
+  template-tag-spacing: warn
+  wrap-regex: off
+  arrow-body-style: ["error", "as-needed"]
+  arrow-parens: off
+  arrow-spacing: error
+  no-confusing-arrow: error
+  no-duplicate-imports: error
+  no-useless-constructor: error
+  no-useless-rename: error
+  no-var: error
+  prefer-const: error
+  prefer-rest-params: error
+  prefer-spread: error
+  prefer-template: error
+  rest-spread-spacing: error
+  sort-imports: error
+  template-curly-spacing: error
