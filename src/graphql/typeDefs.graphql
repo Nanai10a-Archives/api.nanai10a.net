@@ -1,0 +1,46 @@
+type Description {
+  id: String!
+  markdown: String!,
+  timestamp: String!,
+  updates: [DescriptionHistory!]!
+}
+
+type DescriptionHistory {
+  markdown: String!,
+  timestamp: String!,
+}
+
+type Error {
+  details: String!
+}
+
+union MaybeDescription = Error | Description
+
+type GetDescriptionQueryResponse {
+  descriptions: [Description]!
+}
+
+type CreateDescriptionMutationResponse {
+  success: Boolean!,
+  errOrResult: MaybeDescription,
+}
+
+type UpdateDescriptionMutationResponse {
+  success: Boolean!,
+  errOrResult: MaybeDescription,
+}
+
+type DeleteDescriptionMutationResponse {
+  success: Boolean!
+  err: Error
+}
+
+type Query {
+  descriptions: GetDescriptionQueryResponse!
+}
+
+type Mutation {
+  createDescription(markdown: String!): CreateDescriptionMutationResponse!,
+  deleteDescription(id: ID!): DeleteDescriptionMutationResponse!
+  updateDescription(id: String!, markdown: String!): UpdateDescriptionMutationResponse!,
+}

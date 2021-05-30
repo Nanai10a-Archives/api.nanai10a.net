@@ -2,13 +2,13 @@ env:
   node: true
   es2021: true
 plugins: ["@typescript-eslint"]
-parser: "@typescript-eslint/parser"
-parserOptions:
-  sourceType: module
+#parser: "@typescript-eslint/parser"
+#parserOptions:
+#  sourceType: module
 extends:
   ["eslint:recommended", "plugin:@typescript-eslint/recommended", "plugin:prettier/recommended"]
 rules:
-  no-extra-parens: error
+#  no-extra-parens: error
   no-template-curly-in-string: error
   no-unreachable-loop: warn
   no-unsafe-optional-chaining: error
@@ -68,18 +68,18 @@ rules:
   block-spacing: error
   brace-style: error
   camelcase: warn
-  comma-dangle: ["error", "never"]
+  comma-dangle: off
   computed-property-spacing: ["error", "never"]
   eol-last: error
   func-call-spacing: error
   func-names: ["error", "never"]
   func-style: error
   function-call-argument-newline: [error, consistent]
-  id-denylist:
-    ["error", "err", "e", "data", "callback", "call", "func", "hoge", "fuga", "tmp", "temp"]
-  id-length: ["error", { "min": 2 }]
-  implicit-arrow-linebreak: error
-  indent: ["error", 2]
+#  id-denylist:
+#    ["error", "err", "e", "data", "callback", "call", "func", "hoge", "fuga", "tmp", "temp"]
+#  id-length: ["error", { "min": 2 }]
+  implicit-arrow-linebreak: off
+  indent: off
   jsx-quotes: error
   key-spacing: error
   keyword-spacing: error
@@ -94,7 +94,7 @@ rules:
   max-nested-callbacks: warn
   max-params: ["warn", 5]
   max-statements-per-line: error
-  multiline-ternary: [error, never]
+  multiline-ternary: off
   no-array-constructor: error
   no-bitwise: warn
   no-continue: off
@@ -106,9 +106,9 @@ rules:
   no-underscore-dangle: warn
   no-unneeded-ternary: error
   no-whitespace-before-property: error
-  nonblock-statement-body-position: error
-  object-curly-newline: ["error", { "multiline": true }]
-  object-curly-spacing: ["error", "never"]
+#  nonblock-statement-body-position: error
+#  object-curly-newline: ["error", { "multiline": true }]
+  object-curly-spacing: ["error", "always"]
   object-property-newline: ["error", { "allowAllPropertiesOnSameLine": true }]
   one-var: ["error", { "var": "always", "let": "never", "const": "never" }]
   one-var-declaration-per-line: error
@@ -119,13 +119,13 @@ rules:
   prefer-exponentiation-operator: error
   prefer-object-spread: warn
   quote-props: ["error", "as-needed"]
-  quotes: error
+#  quotes: error
   semi-spacing: error
   semi-style: error
   sort-keys: error
   sort-vars: error
   space-before-blocks: error
-  space-before-function-paren: ["error", "never"]
+  space-before-function-paren: ["error", "always"]
   space-in-parens: error
   space-infix-ops: error
   space-unary-ops: error

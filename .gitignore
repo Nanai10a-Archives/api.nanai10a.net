@@ -119,3 +119,5 @@ dist
 
 # customs
 .env-cmdrc
+build
+private
